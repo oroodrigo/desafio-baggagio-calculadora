@@ -1,0 +1,148 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #3d3d3d;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --dark-green-baggagio: #163F31;
+  --light-green-baggagio: #3E7A66;
+  --light-gray: #d8d8d8;
+  --light-gray-hover: #b9b9b9;
+  --medium-gray: #9e9e9e;
+  --dark-gray: #313131;
+  --dark-gray-hover: #2a2a2a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  place-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 14px;
+
+  transition: all 0.25s;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 17rem;
+  background-color: black;
+  padding: 0.5rem;
+  border-radius: 8px;
+  min-width: fit-content;
+  width: 35%;
+
+  transition: all 0.25s;
+}
+
+button {
+  border-radius: 8px;
+  border: 2px solid transparent;
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--dark-gray);
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+button:hover {
+  background-color: var(--dark-gray-hover);
+  border-color: var(--dark-green-baggagio);
+}
+
+
+#result {
+  align-self: flex-end;
+  margin-bottom: 1rem;
+  font-size: 18px;
+}
+
+#keyboard {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(4, 1fr);
+
+  transition: all 0.25s;
+}
+
+#keyboard button:nth-child(17) {
+  grid-column: span 2;
+}
+
+.operation-button {
+  background-color: var(--dark-green-baggagio);
+}
+
+.operation-button:hover {
+  background-color: var(--light-green-baggagio);
+  border-color: var(--dark-green-baggagio);
+}
+
+.special-operation-button {
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+}
+
+.special-operation-button:hover {
+  background-color: var(--light-gray-hover);
+  border-color: var(--light-gray-hover);
+}
+
+@media screen and (min-width: 425px) {
+  .wrapper {
+    min-height: 22rem;
+    padding: 1rem;
+    width: 30%;
+  }
+
+  #result {
+    font-size: 24px;
+  }
+
+  #root {
+    padding: 2rem;
+
+  }
+
+  button {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    max-width: 35%;
+  }
+
+  #root {
+    font-size: 20px;
+  }
+
+  #keyboard {
+    gap: 0.750rem
+  }
+}
