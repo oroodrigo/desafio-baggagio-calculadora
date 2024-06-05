@@ -1,7 +1,7 @@
 <strong><h1 align="center">Desafio Técnico Baggagio</h1></strong>
 
 <p align="center">
-  <img alt="preview do projeto" src="public/assets/preview.png" width="100%">
+  <img alt="preview do projeto" src="public/preview.png" width="100%">
 </p>
 
 ## Descrição 
