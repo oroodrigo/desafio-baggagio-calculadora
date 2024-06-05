@@ -10,7 +10,7 @@
 
 ## Demo
 
-Link do projeto: https://desafio-baggagio-calculadora.netlify.app
+<a href="https://desafio-baggagio-calculadora.netlify.app" target="_blank">Clique aqui</a> e acesse a demo do projeto: 
 
 ## 🚀 Tecnologias
 
