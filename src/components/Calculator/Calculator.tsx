@@ -45,7 +45,12 @@ export function Calculator() {
   }
 
   function handlePIOperation() {
-    setResult(Math.PI)
+    if (isShowingOperationNumber) {
+      setOperationNumber(Math.PI)
+    } else {
+      setResult(Math.PI)
+    }
+
     setIsShowingOperationNumber(false)
   }
 
