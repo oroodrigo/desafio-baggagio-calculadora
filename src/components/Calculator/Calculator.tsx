@@ -51,7 +51,6 @@ export function Calculator() {
       setResult(Math.PI)
     }
 
-    setIsShowingOperationNumber(false)
   }
 
   function handleOperatorChange() {
